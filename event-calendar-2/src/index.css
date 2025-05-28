@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.day-with-event {
+  position: relative;
+}
+.day-with-event::after {
+  content: '';
+  position: absolute;
+  bottom: 4px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px; /* Adjust as needed */
+  height: 6px; /* Adjust as needed */
+  border-radius: 50%;
+  background-color: theme('colors.sky.500'); /* Example color, ensure your Tailwind config supports this */
+}
